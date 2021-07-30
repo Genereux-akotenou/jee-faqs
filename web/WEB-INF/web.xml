@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<web-app  xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+
+    
+<!--<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    --><!--<taglib>
+        <taglib-uri>
+            http://java.sun.com/jstl/core
+        </taglib-uri>
+    </taglib>-->
+    <servlet>
+        <servlet-name>faqServlet</servlet-name>
+        <servlet-class>bj.ifri.servlet.faqServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>faqConnect</servlet-name>
+        <servlet-class>bj.ifri.servlet.faqConnect</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>faqServlet</servlet-name>
+        <url-pattern>/faqServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>faqConnect</servlet-name>
+        <url-pattern>/faqConnect</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            60
+        </session-timeout>
+    </session-config>
+    <dependency>
+        <groupId>javax.servlet</groupId>
+        <artifactId>jstl</artifactId>
+        <version>1.2</version>
+    </dependency>
+</web-app>
