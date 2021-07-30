@@ -1,11 +1,10 @@
 # jee-faqs
-faqs web site project built with java entreprise edition technology<br>
-we carried out this project as part of a tp on javaee technology at ifri
+faqs web site project built with java entreprise edition technology. we carried out this project as part of a tp on javaee technology at IFRI.
 
 # Authors
-This project was carried out jointly with @Ninel ASSOGBA, student in sofware engineering at IFRI.
-@Généreux AKOTENOU
-@Ninel ASSOGBA
+This project was carried out jointly with @Ninel ASSOGBA, student in sofware engineering at IFRI.<br>
+@Généreux AKOTENOU<br>
+@Ninel ASSOGBA<br>
 
 # overview
 
