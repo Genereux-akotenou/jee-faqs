@@ -3,10 +3,9 @@ faqs web site project built with java entreprise edition technology. we carried 
 
 # Authors
 This project was carried out jointly with @Ninel ASSOGBA, student in sofware engineering at IFRI.<br>
-@Généreux AKOTENOU<br>
-@Ninel ASSOGBA<br>
 
-# overview
+# 
+<h1 style="text-align: center;">overview</h1>
 
 # -- home -->
 THis is main page of the website
