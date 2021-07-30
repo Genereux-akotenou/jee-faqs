@@ -47,5 +47,5 @@ It was very good experience<br>
 <img src="https://github.com/Genereux-akotenou/jee-faqs/blob/main/preview/foot.PNG"/>
 
 # -- by --><br>
-@Généreux AKOTENOU
+@Généreux AKOTENOU<br>
 @Ninel ASSOGBA
