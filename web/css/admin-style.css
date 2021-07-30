@@ -1,0 +1,65 @@
+.activeOption{
+    display: inline-block;
+    padding: 0.4em;
+    border-radius: 20px;
+    background-color: white;
+    border: 1px solid #0077d2;
+    width: 10em !important;
+    height: auto;
+    cursor: pointer;
+    position: relative;
+}
+.activeOption:hover{
+    color: white;
+    background-color:  #005fa8;
+}
+.bleuBox{
+    background-color: #0077d2;
+    color: white;
+}
+.whiteBox{
+    background-color: #fff;
+    color: #0077d2;
+}
+.nbrQuestion{
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    width: auto;
+    padding: 0.2em 0.45em 0.2em 0.45em;
+    font-size: 0.8em;
+    position: absolute;
+    top: -0.3em;
+    right: -0.4em;
+    font-weight: bold;
+}
+textarea{
+    width: 97%;
+    padding: 0.5em;
+    border: 1px solid gray;
+    resize: none;
+    margin-bottom: 0.5em;
+}
+.questionReponseBox input[type="submit"]{
+    float: right;
+    position: relative;
+    right: 1em;
+    padding: 0.5em;
+    color: white;
+    border: 1px solid white;
+    width: 10em;
+    background-color: #0077d2;
+}
+.reponse{
+    min-height: 200px;
+}
+.reponse input{
+    cursor: pointer;
+}
+.reponse input:hover{
+    background-color: #0168b8;
+    font-weight: bold;
+}
+.reponse textarea:focus{
+    border: 1px solid #ff7f02;
+}

@@ -1,0 +1,485 @@
+html{
+    scroll-behavior: smooth;
+}
+input{
+    outline: none;
+}
+body{
+    margin: 0;
+    font-family: Helvetica Neue LT,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;
+}
+a{
+    text-decoration: none !important;
+}
+#preload{
+    /* position: absolute;
+    top: 0; */
+    display: block;
+    position: fixed !important;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: whitesmoke;
+    z-index: 100;
+}
+header{
+    height: 4em;
+    width: 100%;
+    background-color: #0077d2;
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1;
+}
+#right-nav, #left-nav{
+    display: flex;
+    flex-direction: row;
+}
+#logoBox{
+    width: 4em;
+    height: 2.3em;
+    /*background-color: red;*/
+    margin-top: 0.8em;
+    margin-left: 1em;
+}
+#logoBox img{
+    width: 100%;
+    height: 100%;
+}
+#assistance{
+    color: white;
+    font-weight: bold;
+}
+.top-move{
+    margin-top: 1.2em;
+    color: white;
+    font-size: 1.1em;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+}
+.roundBox{
+    border-radius: 30px;
+    padding: 0.35em;
+    border: 1px solid rgb(206, 206, 206);
+    position: relative;
+    bottom: 0.3em;
+}
+.roundBoxHover{
+    border-radius: 30px;
+    padding: 0.3em;
+    border: 1px solid none;
+    position: relative;
+    bottom: 0.4em;
+}
+.roundBoxHover:hover{
+    background-color: #fff;
+    color: #0077d2;
+}
+.meltColor{
+    color: #b4cee2;
+}
+.joinUs{
+    border-color: #b4cee2;
+}
+.connectLink{
+    font-weight: bold;
+}
+#subBanner, #researchBox{
+    width: 100%;
+    height: 12em;
+    background-color: #0077d2;
+    position: relative;
+    top: 4em;
+}
+#subBanner{
+    overflow: hidden;
+}
+.firstText{
+    color: white;
+    font-size: 2em;
+    position: relative;
+    top: 1em;
+    /*margin-left: 0.8em;*/
+    /* border-bottom: 2px solid white;
+    */width: 14em;
+    text-align: center;
+}
+#subBanner p{
+    text-align: center;
+    color: white;
+    font-size: 2em;
+    position: relative;
+    top: 0.8em;
+}
+.logoInBack{
+    float: right;
+    width: 13em;
+    height: 13em;
+    /* background-color: red; */
+    position: relative;
+    bottom: 3.5em;
+    display: flex;
+    background-image: url("../img/logouac.webp");
+    opacity: 0.2;
+}
+.logoInBack img{
+    width: 100%;
+    height: 100%;
+}
+#researchBox{
+    position: absolute;
+    top: -8em;
+    transition: all .5s ease-in;
+}
+.showHand{
+    cursor: pointer;
+}
+#close{
+    display: none;
+}
+.firstText-1{
+    text-align: center;
+}
+.firstText-1 p{
+    color: white;
+    margin-top: 1em;
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+.firstText-1 input{
+    padding: 0.8em;
+    border: 1px solid white;
+    border-radius: 20px;
+    width: 50%;
+    margin-bottom: 0.5em;
+    z-index: 2;
+}
+.firstText-1 input:focus{
+    border: none !important;
+}
+.firstText-1 a{
+    color: #b4cee2;
+}
+.logoInBack-left{
+    background-image: url("../img/logoifri.webp");
+    width: 15em;
+    float: left;
+}
+.searchBtn{
+    position: relative;
+    right: 2em;
+}
+.top-move a{
+    color: white;
+}
+#thematiqueBox, #frequentlyAskBox{
+    width: 85%;
+    /*background-color: rebeccapurple;*/
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#thematiqueAnsBox{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.text-theme{
+    text-align: center;
+    color: black;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+.themBox{
+    width: 15em;
+    height: 15em;
+    background-color: whitesmoke;
+    margin-bottom: 1em;
+    margin-top: 0.5em;
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
+    border-radius: 2px;
+    text-align: center;
+    padding-top: 1.5em;
+    position: relative;
+}
+.themBox:hover{
+    background-color: rgb(238, 238, 238);
+}
+.themBox:hover .img-theme{
+    width: 13em;
+    height: 10.5em;
+}
+#ifriFaqFooter{
+    height: 10.5em;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+#ifriFaqFooter p{
+    color: #0077d2;
+    font-size: 1.7em;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#copyright{
+    height: 3em;
+    width: 100%;
+    background-color: #0077d2;
+    text-align: center;
+    padding-top: 1.5em;
+    /*padding-bottom: 1em !important;*/
+}
+#copyright P{
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin: 0;
+}
+#ifriFaqFooter i{
+    font-size: 1.2em;
+    margin-left: 0.7em;
+}
+.img-theme{
+    width: 12em;
+    height: 10em;
+    background-color: rgb(68, 99, 117);
+    margin: auto;
+    transition: all 0.5s ease-in;
+}
+.img-theme img{
+    width: 100%;
+    height: 100%;
+}
+.description-themme{
+    display: block;
+    margin: auto;
+    margin-top: 0.4em;
+    color: rgb(61, 61, 61);
+    width: 85%;
+    /*background-color: red;*/
+    word-wrap: break-word;
+}
+.titre-theme{
+    display: block;
+    margin: auto;
+    margin-top: 0.5em;
+    font-weight: bold;
+    color: black;
+}
+.joinUsLink{
+    margin-top: 1em;
+}
+.joinUsLink a{
+    color: #0077d2;
+}
+.textBold:hover{
+    color: white;
+    font-weight: bold;
+}
+#popUpContainer, #popUpContainer2{
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 150%;
+    background-color: rgba(0, 0, 0, 0.822);
+    display: none;
+    padding: 0.5em;
+    transition: all 1s ease-in;
+    opacity: 0;
+}
+#popUpQuestion, #popUpAddThematique{
+    margin: auto;
+    margin-top: 10%;
+    width: 60%;
+    /*height: 21.5em;*/
+    height: auto;
+    background-color: whitesmoke;
+    padding: 1em;
+    transition: all 1s ease-in;
+    opacity: 0;
+}
+#sendHead, #sendHead2{
+    border-bottom: 3px solid #ddd;
+    padding-bottom: 0.3em;
+}
+#sendBody, #sendBody2{
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    padding: 0.5em 0 0.5em 0;
+}
+#sendBody div:first-of-type, #sendBody2 div:first-of-type{
+    width: 70%;
+    /* background-color: red; */
+}
+#sendBody div:first-of-type textarea, #sendBody2 div:first-of-type textarea{
+    width: 96%;
+    height: 94.7%;
+    padding: 0.5em;
+    resize: none;
+}
+#sendBody div:last-of-type, #sendBody2 div:last-of-type{
+    width: 30%;
+    /* background-color: royalblue; */
+    border: 1px solid gray;
+    padding: 0.5em;
+    text-align: center;
+}
+#sendBody div:last-of-type input, select, option, #sendBody2 div:last-of-type input, select, option{
+    width: 80%;
+    padding: 0.5em 1em 0.5em 1em;
+    border-radius: 15px;
+    border: 1px solid #0077d2;
+}
+#themes{
+    width: 90%;
+    padding: 0.5em 1em 0.5em 1em !important;
+}
+#sendFoot, #sendFoot2{
+    border-top: 3px solid #ddd;
+    padding-top: 0.6em;
+    height: 1.8em;
+    width: 100%;
+}
+#sendFoot input, #sendFoot2 input{
+    float: right;
+    padding: 0.8em;
+    color: white;
+    border: 1px solid white;
+    width: 10em;
+    background-color: #0077d2;
+    cursor: pointer;
+}
+#sendFoot input:hover, #sendFoot2 input:hover{
+    background-color: #0077d2;
+    font-weight: bold;
+}
+.quitAsk{
+    float: left;
+    padding: 0.5em;
+    color: white;
+    border: 1px solid white;
+    width: 7em;
+    background-color: red;
+    cursor: pointer;
+    text-align: center;
+}
+.quitAsk:hover{
+    background-color: red;
+    font-weight: bold;
+}
+#sendHead i, #sendHead2 i{
+    float: right;
+    padding: 0.2em 0.3em 0.2em 0.3em;
+    border-radius: 20px;
+}
+#sendHead i:hover, #sendHead i:hover{
+    color: white;
+    background-color: red;
+}
+
+/************ADMIN-STYLE***********/
+.activeOption{
+    margin-right: 0.5em;
+    display: inline-block;
+    padding: 0.4em;
+    border-radius: 20px;
+    background-color: white;
+    border: 1px solid #0077d2;
+    width: 10em !important;
+    height: auto;
+    cursor: pointer;
+    position: relative;
+}
+.activeOption:hover{
+    color: white;
+    background-color:  #005fa8;
+}
+.bleuBox{
+    background-color: #0077d2;
+    color: white;
+}
+.whiteBox{
+    background-color: #fff;
+    color: #0077d2;
+}
+.nbrQuestion{
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    width: auto;
+    padding: 0.2em 0.45em 0.2em 0.45em;
+    font-size: 0.8em;
+    position: absolute;
+    top: -0.3em;
+    right: -0.4em;
+    font-weight: bold;
+}
+.shadowForDesktop{
+    display: none;
+}
+.shadowForMobil, .showForMobil{
+    display: block;
+}
+.bars{
+    margin-right: 0.3em;
+}
+.fadeDisplay{
+    transition: all .2s ease-in;
+}
+.anonym1, .anonym2{
+    cursor: pointer;
+}
+/****************RESPONSIVE****************/
+@media screen and (max-width: 700px){
+    .shadowForMobil{
+        display: none !important;
+    }
+    .showForMobil{
+        display: block !important;
+    }
+    #close{
+        display: none !important;
+    }
+    .shadowForDesktop1{
+        display: block !important;
+    }
+}
+/************STYLE RESEARCH BOX************/
+#displayAnsBox{
+    background-color: white;
+    width: 50%;
+    min-height: 2em;
+    margin: auto;
+    padding: 0.72em;
+    position: relative;
+    /*top: -1.5em;*/
+    right: 0.60em;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    text-align: left;
+    display: none;
+}
+#displayAnsBox a{
+    color: black;    
+}
+#displayAnsBox a:hover{
+    background-color: gray;    
+}
+.dataAboutSearch{
+    float: right;
+    color: black;
+}
+.themeSearch{
+    color: #b4cee2 !important;
+}
+.black{
+    color: black;
+}

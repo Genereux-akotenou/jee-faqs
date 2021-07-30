@@ -1,0 +1,85 @@
+#connetETregister{
+    height: auto;
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.userEnterBox{
+    background-color: rgb(226, 226, 226);
+    width: 25em !important;
+    height: 23em;
+    transition: all .9s ease-in;
+    padding: 1%;
+    border-radius: 5px;
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
+    opacity: 0;
+    resize: none;
+}
+h2{
+    color:#000000;
+    font-weight:600;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    border-bottom: 4px solid #0077d2 /*#ff4584*/;
+    display: block;
+    letter-spacing: 1px;
+}
+.userEnterBox span{
+    font-size: 16px;
+	margin-bottom: 5px;
+	display: inline-block;
+	
+	letter-spacing: 1px; 
+}
+.userEnterBox input[type="text"], .userEnterBox input[type="email"], .userEnterBox input[type="submit"], .userEnterBox input[type="password"]{
+    width: 90%;
+	padding: 1em;
+	outline: none;
+	font-weight: 400;
+	border: 1px solid #607d8b;
+	/*font-size: 30px;*/
+	letter-spacing: transparent;
+    border-radius: 30px;
+    margin-bottom: 0.5em;
+}
+.userEnterBox input[type="submit"]{
+    background: #0077d2;
+	color:#ffff;
+	outline: none;
+	border: none;
+	font-weight:500;
+    cursor: pointer;
+    margin: auto;
+    width: 95%;
+}
+.userEnterBox input[type="submit"]:hover{
+    background-color: #005fa8;
+    font-weight: bold;
+}
+.remember{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.tssl{
+	color:#607d8b;/*ou ne pas mettre de couleur*/
+	font-weight: 400;
+    font-size: 14px;
+}
+.ttls{
+    height: 31.5em;
+    margin-top: 1em;
+}
+.ttls1{
+    margin-top: 5%;
+}
+.inputBox{
+    text-align: center;
+}
+.linkS{
+    text-decoration: underline;
+    color: blue;
+    cursor: pointer;
+    margin-left: 0.2em;
+}
